@@ -1,0 +1,12 @@
+package by.antonina.pokemons;
+
+import by.antonina.attack.RockSlide;
+
+public final class Quagsire extends Wooper {
+
+    public Quagsire(String name, int level) {
+        super(name, level);
+        this.setStats(95, 85, 85, 65, 65, 35);
+        this.addMove(new RockSlide());
+    }
+}

@@ -1,7 +1,17 @@
-package by.dima;
+package by.antonina;
+
+import by.antonina.pokemons.Poliwhirl;
+import by.antonina.pokemons.Quagsire;
+import ru.ifmo.se.pokemon.Battle;
+import ru.ifmo.se.pokemon.Pokemon;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Battle b = new Battle();
+        Pokemon p1 = new Poliwhirl("Чужой", 1);
+        Pokemon p2 = new Quagsire("Хищник", 1);
+        b.addAlly(p1);
+        b.addFoe(p2);
+        b.go();
     }
 }
